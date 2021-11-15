@@ -105,6 +105,8 @@ header {
 .contact-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
+  padding-left: 0;
 }
 
 .contact-nav .item + .item {
@@ -125,6 +127,18 @@ header {
   color: var(--accent-color);
 }
 
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.contact-nav .mail-icon:hover,
+.contact-nav .mail-icon:focus {
+  fill: var(--accent-color);
+}
+
 /* ТЕЛО */
 /* Настройка свойств блока героя */
 .hero {
@@ -132,6 +146,13 @@ header {
   text-align: center;
   height: 600px;
   margin-bottom: 94px;
+}
+
+.hero-image {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
 }
 
 .hero-title {
