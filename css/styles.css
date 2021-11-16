@@ -8,6 +8,7 @@
   --secondary-bg-color: #2f303a;
   --primary-button-bg-color: #f5f4fa;
   --primary-border-color: #ececec;
+  --primary-icon-color: #afb1b8;
 }
 
 /* Свойства всей страницы */
@@ -114,6 +115,8 @@ header {
 }
 
 .contact-nav .link {
+  display: inline-flex;
+  align-items: center;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -122,9 +125,19 @@ header {
   text-decoration: none;
 }
 
-.contact-nav .link:hover,
-.contact-nav .link:focus {
+.item > .link:hover,
+.item > .link:focus {
   color: var(--accent-color);
+}
+
+.item > .link:hover .mail-icon,
+.item > .link:focus .mail-icon {
+  fill: var(--accent-color);
+}
+
+.item > .link:hover .tel-icon,
+.item > .link:focus .tel-icon {
+  fill: var(--accent-color);
 }
 
 .mail-icon {
@@ -134,10 +147,16 @@ header {
   fill: var(--primary-text-color);
 }
 
-.contact-nav .mail-icon:hover,
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+/* .contact-nav .mail-icon:hover,
 .contact-nav .mail-icon:focus {
   fill: var(--accent-color);
-}
+} */
 
 /* ТЕЛО */
 /* Настройка свойств блока героя */
@@ -275,6 +294,21 @@ header {
   min-width: 270px;
 }
 
+.bg-color-features {
+  display: inline-flex;
+  width: 270px;
+  background: var(--primary-button-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.icon-features {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+}
+
 /* Настройка секции "Чем мы занимаемся" */
 .our-work {
   display: flex;
@@ -329,7 +363,44 @@ header {
 
 .cards .text {
   text-align: center;
-  padding-bottom: 31px;
+  margin-bottom: 16px;
+}
+
+.colladge {
+  display: flex;
+  justify-content: center;
+  /* width: calc((100% - 30px) / 4); */
+  padding-left: 0;
+  padding-bottom: 30px;
+}
+
+.link-team {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.icon-team {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+  fill: var(--primary-icon-color);
+}
+
+.colladge .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-team:hover,
+.link-team:focus {
+  background-color: var(--accent-color);
+}
+
+.link-team:hover .icon-team,
+.link-team:focus .icon-team {
+  fill: var(--primary-white-color);
 }
 
 /* ПОДВАЛ */
