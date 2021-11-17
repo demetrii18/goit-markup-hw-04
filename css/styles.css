@@ -526,6 +526,7 @@ header {
 }
 
 .address {
+  display: inline-block;
   font-style: normal;
   padding-bottom: 60px;
   padding-left: 0;
@@ -628,4 +629,44 @@ header {
 .link > .text {
   padding-bottom: 20px;
   padding-left: 24px;
+}
+
+.join-us > .title {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.colladge-join {
+  display: flex;
+  padding-left: 0;
+}
+
+.colladge-join .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.colladge-join .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-join {
+  display: flex;
+}
+
+.icon-join {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+  fill: var(--primary-white-color);
+}
+
+.link-join:hover,
+.link-join:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
