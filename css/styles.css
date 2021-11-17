@@ -503,6 +503,14 @@ header {
   background-color: var(--secondary-bg-color);
 }
 
+.footer > .container {
+  display: flex;
+}
+
+.conection {
+  display: inline-block;
+}
+
 .logo-foot {
   color: var(--primary-white-color);
 
@@ -629,6 +637,10 @@ header {
 .link > .text {
   padding-bottom: 20px;
   padding-left: 24px;
+}
+
+.join-us {
+  padding: 72px 0 100px 70px;
 }
 
 .join-us > .title {
