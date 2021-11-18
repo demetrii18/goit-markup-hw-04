@@ -13,8 +13,7 @@
 
 /* Свойства всей страницы */
 body {
-  width: 1600px;
-  margin: auto auto;
+  margin: auto;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 
@@ -162,6 +161,7 @@ header {
 /* ТЕЛО */
 /* Настройка свойств блока героя */
 .hero {
+  margin: auto;
   background-color: var(--secondary-bg-color);
   text-align: center;
   height: 600px;
@@ -242,6 +242,7 @@ header {
 
 /* Настройка свойств секций */
 .section {
+  margin: auto;
   color: var(--primary-text-color);
 
   line-height: 1.71;
@@ -249,8 +250,6 @@ header {
 }
 
 .section.last {
-  margin-bottom: 94px;
-  width: 1600px;
   background-color: var(--primary-button-bg-color);
 }
 
